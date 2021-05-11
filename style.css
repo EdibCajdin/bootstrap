@@ -1,0 +1,132 @@
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*************************HEADER***************************/
+
+#logo {
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+}
+
+#header-a {
+    text-align: right;
+}
+
+header a {
+    color: rgb(126, 126, 126);
+    font-size: 26px;
+    padding: 10px;
+}
+
+header a:first-child {
+    font-weight: bold;
+}
+
+header a:last-child {
+    margin-right: 30px;
+}
+
+header a:hover {
+    color: rgb(78, 77, 77);
+    background-color: rgba(175, 194, 194, 0.12);
+}
+
+#menu-img {
+    height: 26px;
+}
+
+#menu-text {
+    font-size: 26px;
+}
+
+
+/*************************HERO SECTION***************************/
+
+#hero-section {
+    min-height: 600px;
+    position: relative;
+}
+
+#hero-section p {
+    position: relative;
+    top: 110px;
+    left: 90px;
+    font-size: 38px;
+    background-color: rgb(74, 180, 122);
+    display: inline-block;
+    padding: 15px;
+    color: red;
+}
+
+@media screen and(max-width: 760px) {
+    #hero-section {
+        max-height: 100px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #hero-section {
+        min-height: 400px;
+    }
+    #text-sl {
+        font-size: 24px !important;
+        top: 40px !important;
+        left: 150px !important;
+        padding: 11px;
+    }
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(14, 13, 13, 0.1);
+    z-index: 2;
+}
+
+#hero {
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*************************INTRO SECTION***************************/
+
+#intro-section img {
+    height: 200px;
+}
+
+
+/*************************MAIN SECTION***************************/
+
+#main-section img {
+    width: 100%;
+}
+
+
+/*************************CONTACT SECTION***************************/
+
+#contact-section li {
+    border: none;
+    border-top: 0.1px solid rgb(90, 89, 89);
+    padding-left: 0;
+}
+
+#contact-section li:last-child {
+    border-bottom: 0.1px solid rgb(90, 89, 89);
+}
+
+
+/*************************FOOTER SECTION***************************/
+
+footer {
+    background-color: black;
+}
